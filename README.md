@@ -1,11 +1,9 @@
 
-# 🚀 Front end challenge
+# 🚀 Ecommerce-capputeeno
+Este projeto foi desenvolvido através de um desafio de uma vaga de front-end, desenvolvido com as tecnologias React e NextJs.
 
-Bem-vindo(a). Este é o desafio Front end!
+##Na pasta api temos o backend para Run:
+npm run start
 
-O objetivo deste desafio é avaliar suas habilidades de programação.
-Quando sua solução estiver pronta, basta responder o e-mail que recebeu com o link do seu repo aqui no Github!
-Em seguida, enviaremos o feedback e as instruções dos próximos passos!
-
-Caso tenha alguma dúvida, nós estamos disponíveis no email *recrutamento@rocketseat.com.br*
-Bom desafio!
+##Na Pasta do frontend capputeeno para Run:
+npm run serve
