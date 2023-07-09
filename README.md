@@ -1,4 +1,3 @@
-
 # 🚀 Ecommerce-capputeeno
 Este projeto foi desenvolvido através de um desafio de uma vaga de front-end, desenvolvido com as tecnologias React e NextJs.
 
