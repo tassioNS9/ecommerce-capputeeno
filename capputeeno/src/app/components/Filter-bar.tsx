@@ -4,10 +4,6 @@ import { FilterbyPriority } from "./Filter-by-priority"
 import { FilterbyType } from "./Filter-by-type"
 import {styled} from "styled-components"
 
-
-
-
-
 interface FilterBarProps {
 
 }

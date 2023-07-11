@@ -1,6 +1,3 @@
-"use client"
-
-
 import { styled } from "styled-components"
 import { SearchIcon } from "./Search-Icon"
 import { InputHTMLAttributes } from "react"
@@ -30,12 +27,15 @@ width:352px;
 
     }
 `
-interface InputProps extends InputHTMLAttributes<HTMLInputElement> { }
+interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
+    value:string,
+    handleChange: (value:string)=>void
+ }
 
 export function PrimaryInputWSearchIcon(props: InputProps) {
     return (
         <InputContainer>
-        <PrimaryInput {...props}/>
+        <PrimaryInput  onChange={(e:any)=> props.handleChange(e.target.value)}  {...props}/>
             <SearchIcon />
         </InputContainer>
     )

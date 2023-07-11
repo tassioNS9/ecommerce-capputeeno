@@ -3,9 +3,6 @@ import {styled} from "styled-components"
 import { ArrowIcon } from './Arrow-icon'
 import { useFilter } from '../hooks/useFilter'
 import { PriorityTypes } from '../types/Priority-types'
-interface FilterbyPriority{
-
-}
 
 const FilterContainer = styled.div`
     display:flex;
@@ -37,7 +34,7 @@ const PriorityFilter = styled.ul`
 
     width:250px;
     list-style:none;
-
+    z-index:999;
     li{
         color:var(--text-dark)
         font-size:14px;
@@ -49,7 +46,7 @@ const PriorityFilter = styled.ul`
     }
 `
 
-export function FilterbyPriority(props:FilterbyPriority){
+export function FilterbyPriority(){
     const [isOpen, setIsOpen] = useState(false)
     const {setPriority} = useFilter()
     const handleOpen = ()=>setIsOpen(prev=>!prev)
@@ -62,7 +59,7 @@ export function FilterbyPriority(props:FilterbyPriority){
 
     return(
         <FilterContainer>
-            <button onClick={ handleOpen}>Organizar por
+            <button onClick={handleOpen}>Organizar por
                 <ArrowIcon/>
             </button>
         {isOpen && <PriorityFilter>
